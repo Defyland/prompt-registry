@@ -65,3 +65,39 @@ Verification evidence:
 
 - `bundle exec rake test`
 - `ruby bin/prompt-registry validate`
+
+## 2026-06-29 - Publish The Registry Under MIT
+
+Context: `prompt-registry` is a public canonical prompt source for the
+workspace. Its value depends on cheap reuse by sibling repos and operator
+tooling, so leaving the repo without an explicit license would create a gap in
+the very reuse flow it is meant to support.
+
+Options considered:
+
+- leave the repo unlicensed
+- use a more restrictive or reciprocal license
+- publish under MIT
+
+Choice: publish under MIT.
+
+Pros:
+
+- keeps prompt reuse explicit across the tooling lane
+- matches the registry's role as a local source artifact, not a hosted service
+- removes avoidable legal ambiguity from downstream materialization consumers
+
+Cons:
+
+- allows broad reuse with limited reciprocity
+- does not constrain proprietary downstream packaging
+
+Consequences:
+
+- tooling consumers can treat the prompt corpus as explicitly reusable
+- publication readiness for the registry now covers legal surface as well as validation and docs
+
+Verification evidence:
+
+- `./bin/check`
+- `ruby bin/prompt-registry validate`

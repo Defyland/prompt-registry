@@ -145,3 +145,7 @@ CI runs the same contract.
 - Only one version per task type exists today.
 - There is no prompt scoring or A/B experimentation yet.
 - Materialization is plain placeholder replacement, not a policy engine.
+
+## License
+
+MIT. See [LICENSE.txt](./LICENSE.txt).

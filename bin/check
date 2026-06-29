@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+bundle exec rake test
+ruby bin/prompt-registry validate
+ruby bin/prompt-registry list >/dev/null

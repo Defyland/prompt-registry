@@ -1,0 +1,64 @@
+prompts:
+  - id: review
+    version: v1
+    summary: Review a diff or branch for bugs, regressions, and missing tests.
+    path: prompts/review/v1.md
+    placeholders:
+      - repo_name
+      - task_context
+      - constraints
+      - verification
+  - id: feature
+    version: v1
+    summary: Implement a scoped feature with explicit contracts and verification.
+    path: prompts/feature/v1.md
+    placeholders:
+      - repo_name
+      - task_context
+      - constraints
+      - verification
+  - id: bugfix
+    version: v1
+    summary: Reproduce and fix one bug with focused validation.
+    path: prompts/bugfix/v1.md
+    placeholders:
+      - repo_name
+      - task_context
+      - constraints
+      - verification
+  - id: docs
+    version: v1
+    summary: Improve docs without drifting from executable truth.
+    path: prompts/docs/v1.md
+    placeholders:
+      - repo_name
+      - task_context
+      - constraints
+      - verification
+  - id: migration
+    version: v1
+    summary: Plan and implement a migration with rollback and verification thinking.
+    path: prompts/migration/v1.md
+    placeholders:
+      - repo_name
+      - task_context
+      - constraints
+      - verification
+  - id: security-audit
+    version: v1
+    summary: Audit a code path or system for security failures and evidence gaps.
+    path: prompts/security-audit/v1.md
+    placeholders:
+      - repo_name
+      - task_context
+      - constraints
+      - verification
+  - id: release-readiness
+    version: v1
+    summary: Check whether a repo is actually ready for release or publication.
+    path: prompts/release-readiness/v1.md
+    placeholders:
+      - repo_name
+      - task_context
+      - constraints
+      - verification
